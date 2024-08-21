@@ -38,9 +38,9 @@
       </style>
 </head>
 <body class="font-manrope">
-    <header class="container mx-auto">
+    <header class="container mx-auto  bg-gradient-to-b from-gray-50 to-transparent max-w-[1440px] ">
         <!-- navbar -->
-        <div class="navbar bg-base-100">
+        <div class="navbar">
             <div class="navbar-start">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -82,24 +82,61 @@
                 <li class="text-lg font-normal text-[#737373]"><a>Contact Us</a></li>
               </ul>
             </div>
-            <div class="navbar-end gap-5">
-                <div class="flex gap-5">
-                    <i class="fa-solid fa-magnifying-glass opacity-80 rounded-full bg-[#FFFFFF]"></i>
-                    <i class="fa-solid fa-cart-shopping opacity-80 roun bg-[#FFFFFF]"></i>
+            <div class=" navbar-end  ">
+               <div class="flex justify-center items-center gap-6">
+                <div class=" lg:flex gap-5">
+                    <i class="fa-solid fa-magnifying-glass opacity-80 border rounded-full p-2 bg-[#FFFFFF]"></i>
+                    <i class="fa-solid fa-cart-shopping opacity-80 roun bg-[#FFFFFF] border rounded-full p-2"></i>
                 </div>
-                <button class="btn bg-[#ABEF5F] rounded-3xl text-lg font-extrabold">Book Consult<i class="fa-solid fa-arrow-right rounded-full bg-black p-1 -rotate-45 flex items-center justify-center text-[#ABEF5F]"></i></button>
+                <button class="btn  bg-[#ABEF5F] rounded-3xl text-lg font-extrabold ">Book Consult<i class="fa-solid fa-arrow-right rounded-full bg-black p-1 -rotate-45 flex items-center justify-center text-[#ABEF5F]"></i></button>
             </div>
+               </div>
           </div>
-        <div class="flex flex-col justify-center items-center mt-20">
+
+          <!-- Banner -->
+        <div class="flex flex-col justify-center items-center mt-20 ">
             <img src="./assets/banner.png" alt="">
             <div class="w-4/5 flex flex-col justify-center items-center mt-10 space-y-6">
-                <h1 class="text-6xl font-extrabold text-[#212121]">A barn house of this design <br> has a striking appearance</h1>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-[#212121]">A barn house of this design <br> has a striking appearance</h1>
                 <p class="text-lg text-[#494949] font-medium">Take a deep dive and browse homes for sale, original neighborhood photos, <br> resident,reviews and local insights and what is right for you. </p>
-                <button class="btn bg-[#ABEF5F80] border-2 border-[#ABEF5F80]  rounded-3xl text-lg font-extrabold">View Details<i class="fa-solid fa-arrow-right rounded-full bg-[#ABEF5F] p-1 -rotate-45 flex items-center justify-center text-[black]"></i></button>
+                <button class="btn bg-[#ABEF5F80] border-2 border-[#ABEF5F80]  rounded-3xl text-lg font-extrabold text-[#212121]">View Details<i class="fa-solid fa-arrow-right rounded-full bg-[#ABEF5F] p-1 -rotate-45 flex items-center justify-center text-[black]"></i></button>
             </div>
         </div>
     </header>
-    <main></main>
+    <main>
+        <!-- About us section -->
+        <section class="container mx-auto mt-28 max-w-[1440px] flex flex-col lg:flex-row justify-center items-center gap-10 relative bg-gray-100 ">
+            <div class=" hidden lg:block  absolute top-7 left-8 border-2 border-dashed border-stone-300 p-4 w-28">
+                <img src="./assets/Vector.png" alt="">
+               </div>
+            <div class="space-y-10 p-20" >
+               <div class="space-y-5">
+                <button class=" border border-slate-300 rounded-3xl w-44 font-bold flex items-center justify-center gap-2 bg-white"><i class="fa-solid fa-arrow-right"></i>About Us</button>
+                <h2 class="text-5xl font-bold text-[#212121] w-3/4">We design thoughtful, liveable spaces</h2>
+                <p class="text-[#494949]">Find your place with an immersive photo experience and most listings.</p>
+               </div>
+               <div class=" space-y-5">
+                <div class="flex gap-4 p-5  rounded-2xl bg-white w-full">
+                    <img src="./assets/commercial.png" alt="">
+                    <div class="space-y-3">
+                        <h4 class="text-lg font-extrabold">Commercial</h4>
+                        <p class="text-[#737373]">Freehold and leasehold commercial properties on us.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 p-5 bg-white rounded-2xl w-full">
+                    <img src="./assets/residential.png" alt="">
+                    <div class="space-y-3">
+                        <h4 class="text-lg font-extrabold">Residential</h4>
+                        <p class="text-[#737373]">With more neighborhood insights than any other residential areas.</p>
+                    </div>
+                </div>
+               </div>
+            </div>
+            <div class="p-10">
+            <img src="./assets/Rectangle.png" alt="">
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 </html>
