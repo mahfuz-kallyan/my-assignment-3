@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
     <!-- daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -21,214 +22,270 @@
 
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
-      <style>
-        .font-manrope{
+    <style>
+        .font-manrope {
             font-family: "Manrope", sans-serif;
         }
-      </style>
+    </style>
 </head>
-<body class="font-manrope">
-    <header class="container mx-auto  bg-gradient-to-b from-gray-50 to-transparent max-w-[1440px] ">
-        <!-- navbar -->
-        <div class="navbar">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost text-4xl font-extrabold"> <i class="fa-solid fa-arrow-right  rounded-full bg-[#ABEF5F] -rotate-45 text-black-300 p-1"></i>Rinterio</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li class="text-lg font-semibold text-[#494949]"><a>Home</a></li>
-                <li class="text-lg font-normal text-[#737373]"><a>Services</a></li>
-                <li class="text-lg font-normal text-[#737373]"><a>Portfolio</a></li>
-                <li class="text-lg font-normal text-[#737373]"><a>Blog</a></li>
-                <li class="text-lg font-normal text-[#737373]"><a>Contact Us</a></li>
-              </ul>
-            </div>
-            <div class=" navbar-end  ">
-               <div class="flex justify-center items-center gap-6">
-                <div class=" lg:flex gap-5">
-                    <i class="fa-solid fa-magnifying-glass opacity-80 border rounded-full p-2 bg-[#FFFFFF]"></i>
-                    <i class="fa-solid fa-cart-shopping opacity-80 roun bg-[#FFFFFF] border rounded-full p-2"></i>
-                </div>
-                <button class="btn  bg-[#ABEF5F] rounded-3xl text-lg font-extrabold ">Book Consult<i class="fa-solid fa-arrow-right rounded-full bg-black p-1 -rotate-45 flex items-center justify-center text-[#ABEF5F]"></i></button>
-            </div>
-               </div>
-          </div>
 
-          <!-- Banner -->
+<body class="font-manrope">
+    <header class="container mx-auto  bg-gradient-to-b from-gray-100 to-transparent max-w-[1440px] ">
+        <!-- navbar -->
+        <div class="navbar justify-between">
+            <div class="navbar-start flex items-center flex-row-reverse justify-between flex-grow">
+                <div class="dropdown relative">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0">
+                        <li class="text-lg font-semibold text-[#494949]"><a>Home</a></li>
+                        <li class="text-lg font-normal text-[#737373]"><a>Services</a></li>
+                        <li class="text-lg font-normal text-[#737373]"><a>Portfolio</a></li>
+                        <li class="text-lg font-normal text-[#737373]"><a>Blog</a></li>
+                        <li class="text-lg font-normal text-[#737373]"><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-4xl font-extrabold">
+                    <i class="fa-solid fa-arrow-right  rounded-full bg-[#ABEF5F] -rotate-45 text-black-300 p-1"></i>
+                    Rinterio
+                </a>
+            </div>
+            <div class="navbar-center hidden lg:flex lg:justify-around">
+                <ul class="menu menu-horizontal px-1">
+                    <li class="text-lg font-semibold text-[#494949]"><a>Home</a></li>
+                    <li class="text-lg font-normal text-[#737373]"><a>Services</a></li>
+                    <li class="text-lg font-normal text-[#737373]"><a>Portfolio</a></li>
+                    <li class="text-lg font-normal text-[#737373]"><a>Blog</a></li>
+                    <li class="text-lg font-normal text-[#737373]"><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="hidden sm:flex navbar-end">
+                <div class="flex justify-center items-center gap-6">
+                    <!-- Search Icons -->
+                    <div class="flex gap-5">
+                        <i class="fa-solid fa-magnifying-glass opacity-80 border rounded-full p-2 bg-[#FFFFFF]"></i>
+                        <i class="fa-solid fa-cart-shopping opacity-80 roun bg-[#FFFFFF] border rounded-full p-2"></i>
+                    </div>
+                    <button class="btn bg-[#ABEF5F] rounded-3xl text-lg font-extrabold ">
+                        Book Consult
+                        <i
+                            class="fa-solid fa-arrow-right rounded-full bg-black p-1 -rotate-45 flex items-center justify-center text-[#ABEF5F]"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner -->
         <div class="flex flex-col justify-center items-center mt-20 ">
             <img src="./assets/banner.png" alt="">
             <div class="w-4/5 flex flex-col justify-center items-center mt-10 space-y-6">
-                <h1 class="text-4xl md:text-6xl font-extrabold text-[#212121]">A barn house of this design <br> has a striking appearance</h1>
-                <p class="text-lg text-[#494949] font-medium">Take a deep dive and browse homes for sale, original neighborhood photos, <br> resident,reviews and local insights and what is right for you. </p>
-                <button class="btn bg-[#ABEF5F80] border-2 border-[#ABEF5F80]  rounded-3xl text-lg font-extrabold text-[#212121]">View Details<i class="fa-solid fa-arrow-right rounded-full bg-[#ABEF5F] p-1 -rotate-45 flex items-center justify-center text-[black]"></i></button>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-[#212121]">A barn house of this design <br> has a
+                    striking appearance</h1>
+                <p class="text-lg text-[#494949] font-medium">Take a deep dive and browse homes for sale, original
+                    neighborhood photos, <br> resident,reviews and local insights and what is right for you. </p>
+                <button
+                    class="btn bg-[#ABEF5F80] border-2 border-[#ABEF5F80]  rounded-3xl text-lg font-extrabold text-[#212121]">View
+                    Details<i
+                        class="fa-solid fa-arrow-right rounded-full bg-[#ABEF5F] p-1 -rotate-45 flex items-center justify-center text-[black]"></i></button>
             </div>
         </div>
     </header>
     <main>
         <!-- About us section -->
-        <section class="container mx-auto mt-28 max-w-[1440px] flex flex-col lg:flex-row justify-center items-center gap-10 relative bg-gray-100 ">
+        <section
+            class="container mx-auto mt-28 max-w-[1440px] flex flex-col lg:flex-row justify-center items-center gap-10 relative bg-gray-100 ">
             <div class=" hidden lg:block  absolute top-7 left-8 border-2 border-dashed border-stone-300 p-4 w-28">
                 <img src="./assets/Vector.png" alt="">
-               </div>
-            <div class="space-y-5 p-20" >
-               <div class="space-y-5">
-                <button class=" border border-slate-300 rounded-3xl w-44 font-bold flex items-center justify-center gap-2 bg-white"><i class="fa-solid fa-arrow-right"></i>About Us</button>
-                <h2 class="text-4xl lg:text-5xl font-bold text-[#212121] w-full ">We design thoughtful, liveable spaces</h2>
-                <p class="text-[#494949] w-full">Find your place with an immersive photo experience and most listings.</p>
-               </div>
-               <div class=" space-y-5">
-                <div class="flex gap-4 p-5  rounded-2xl bg-white w-full">
-                    <img src="./assets/commercial.png" alt="">
-                    <div class="space-y-3">
-                        <h4 class="text-lg font-extrabold">Commercial</h4>
-                        <p class="text-[#737373]">Freehold and leasehold commercial properties on us.</p>
+            </div>
+            <div class="space-y-5 p-20">
+                <div class="space-y-5">
+                    <button
+                        class=" border border-slate-300 rounded-3xl w-44 font-bold flex items-center justify-center gap-2 bg-white"><i
+                            class="fa-solid fa-arrow-right"></i>About Us</button>
+                    <h2 class="text-4xl lg:text-5xl font-bold text-[#212121] w-full ">We design thoughtful, liveable
+                        spaces</h2>
+                    <p class="text-[#494949] w-full">Find your place with an immersive photo experience and most
+                        listings.</p>
+                </div>
+                <div class=" space-y-5">
+                    <div class="flex gap-4 p-5  rounded-2xl bg-white w-full">
+                        <img src="./assets/commercial.png" alt="">
+                        <div class="space-y-3">
+                            <h4 class="text-lg font-extrabold">Commercial</h4>
+                            <p class="text-[#737373]">Freehold and leasehold commercial properties on us.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 p-5 bg-white rounded-2xl w-full">
+                        <img src="./assets/residential.png" alt="">
+                        <div class="space-y-3">
+                            <h4 class="text-lg font-extrabold">Residential</h4>
+                            <p class="text-[#737373]">With more neighborhood insights than any other residential areas.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="flex gap-4 p-5 bg-white rounded-2xl w-full">
-                    <img src="./assets/residential.png" alt="">
-                    <div class="space-y-3">
-                        <h4 class="text-lg font-extrabold">Residential</h4>
-                        <p class="text-[#737373]">With more neighborhood insights than any other residential areas.</p>
-                    </div>
-                </div>
-               </div>
             </div>
             <div class="p-10">
-            <img src="./assets/Rectangle.png" alt="">
+                <img src="./assets/Rectangle.png" alt="">
             </div>
         </section>
 
         <!-- our works process -->
-         <section class="conatiner mx-auto max-w-[1440px] mt-20 bg-gray-100">
+        <section class="conatiner mx-auto max-w-[1440px] mt-20 bg-gray-100">
             <div class="flex flex-col justify-center items-center space-y-5 p-5 lg:p-10">
-                <button class=" border border-slate-300 rounded-3xl w-44 font-bold flex items-center justify-center gap-2 bg-white"><i class="fa-solid fa-arrow-right"></i>How we works</button>
+                <button
+                    class=" border border-slate-300 rounded-3xl w-44 font-bold flex items-center justify-center gap-2 bg-white"><i
+                        class="fa-solid fa-arrow-right"></i>How we works</button>
                 <h2 class="text-5xl text-[#212121] font-bold text-center ">Our works Process</h2>
-                <p class="font-medium text-lg text-[#494949] text-center">We are so grateful for the generous support for the donors <br> that makes our work possible.</p>
+                <p class="font-medium text-lg text-[#494949] text-center">We are so grateful for the generous support
+                    for the donors <br> that makes our work possible.</p>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 mt-5 lg:mt-8 p-10">
                 <div class="bg-[#E7C1D3] p-8 space-y-5 rounded-xl">
                     <img src="./assets/concept.png" alt="">
                     <h4 class="text-xl font-extrabold text-[#1C1C1C]">Concept</h4>
-                    <p class="font-medium text-lg text-[#494949]">Give an entire home's as an individual, family or business</p>
+                    <p class="font-medium text-lg text-[#494949]">Give an entire home's as an individual, family or
+                        business</p>
                 </div>
                 <div class="bg-[#EFDA6E] p-8 space-y-5 rounded-xl">
                     <img src="./assets/flow-chart.png" alt="">
                     <h4 class="text-xl font-extrabold text-[#1C1C1C]">Design Process</h4>
-                    <p class="font-medium text-lg text-[#494949]">Give monthly toward essential components of home construction</p>
+                    <p class="font-medium text-lg text-[#494949]">Give monthly toward essential components of home
+                        construction</p>
                 </div>
                 <div class="bg-[#A4DAC3] p-8 space-y-5 rounded-xl">
                     <img src="./assets/vision.png" alt="">
                     <h4 class="text-xl font-extrabold text-[#1C1C1C]">SuperVision</h4>
-                    <p class="font-medium text-lg text-[#494949]">Engage your community in giving toward a goal you set</p>
+                    <p class="font-medium text-lg text-[#494949]">Engage your community in giving toward a goal you set
+                    </p>
                 </div>
                 <div class="bg-[#77AAEA] p-8 space-y-5 rounded-xl">
                     <img src="./assets/budget-planning.png" alt="">
                     <h4 class="text-xl font-extrabold text-[#1C1C1C]">Budget Planning</h4>
-                    <p class="font-medium text-lg text-[#494949]">We need your help to continue to expand our impact or serve for more families</p>
+                    <p class="font-medium text-lg text-[#494949]">We need your help to continue to expand our impact or
+                        serve for more families</p>
                 </div>
             </div>
-         </section>
+        </section>
 
-         <!-- our latest portfolio -->
-          <section class="container max-w-[1440px] mx-auto mt-28">
+        <!-- our latest portfolio -->
+        <section class="container max-w-[1440px] mx-auto mt-28">
             <div class="flex flex-col justify-center items-center space-y-5 p-5">
-                <button class=" rounded-3xl p-2 font-bold flex items-center justify-center gap-2 bg-gray-100"><i class="fa-solid fa-arrow-right"></i>Explore our latest works</button>
+                <button class=" rounded-3xl p-2 font-bold flex items-center justify-center gap-2 bg-gray-100"><i
+                        class="fa-solid fa-arrow-right"></i>Explore our latest works</button>
                 <h2 class="text-4xl font-extrabold text-[#212121] text-center">Our Latest Portfolio</h2>
-                <p class="text-lg font-medium text-[#494949] text-center ">Every person deserves more than a mud hut with a thatched roof. we belief <br> that everyone should have safe place to sleep.</p>
+                <p class="text-lg font-medium text-[#494949] text-center ">Every person deserves more than a mud hut
+                    with a thatched roof. we belief <br> that everyone should have safe place to sleep.</p>
             </div>
             <div class="mt-10">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 p-10">
-                    <div class="space-y-5 p-5 lg:flex justify-center items-center gap-10 col-span-2 border-2 rounded-xl">
-                       <img src="./assets/img1.png" alt="">
-                       <div class="space-y-3">
-                        <h4 class="text-xl font-extrabold text-[#494949]">Commercial</h4>
-                        <p class="text-[#737373] ">With your support we are providing quality homes to familys around the world</p>
-                        <button class="btn rounded-3xl text-lg font-extrabold text-[#212121]">View Details<i class="fa-solid fa-arrow-right rounded-full bg-[#ABEF5F] p-1 -rotate-45 flex items-center justify-center text-[black]"></i></button>
-                       </div>
+                    <div
+                        class="space-y-5 p-5 lg:flex justify-center items-center gap-10 col-span-2 border-2 rounded-xl">
+                        <img src="./assets/img1.png" alt="">
+                        <div class="space-y-3">
+                            <h4 class="text-xl font-extrabold text-[#494949]">Commercial</h4>
+                            <p class="text-[#737373] ">With your support we are providing quality homes to familys
+                                around the world</p>
+                            <button class="btn rounded-3xl text-lg font-extrabold text-[#212121]">View Details<i
+                                    class="fa-solid fa-arrow-right rounded-full bg-[#ABEF5F] p-1 -rotate-45 flex items-center justify-center text-[black]"></i></button>
+                        </div>
                     </div>
                     <div class="p-10 border-2 rounded-xl flex justify-center items-center border-gray-200 ">
                         <img class="w-full" src="./assets/img2.png" alt="">
                     </div>
                 </div>
-                <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 p-10">
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 p-5 lg:p-10">
                     <div class="p-10 border-2 rounded-xl flex justify-center items-center border-gray-200">
                         <img class="w-full" src="./assets/img3.png" alt="">
                     </div>
-                    <div class="space-y-5 p-5 lg:flex justify-center items-center gap-5 border-2 rounded-xl col-span-2">
+                    <div
+                        class="space-y-5 p-5 flex flex-col lg:flex-row justify-center items-center gap-5 border-2 rounded-xl col-span-2">
                         <img src="./assets/img4.png" alt="">
                         <div class="space-y-3">
-                         <h4 class="text-xl font-extrabold text-[#494949]">Commercial</h4>
-                         <p class="text-[#737373] w-full ">With your support we are providing quality homes to familys around the world</p>
-                         <button class="btn rounded-3xl text-lg font-bold  text-[#212121]">View Details<i class="fa-solid fa-arrow-right rounded-full bg-[#ABEF5F] p-1 -rotate-45 flex items-center justify-center text-[black]"></i></button>
+                            <h4 class="text-xl font-extrabold text-[#494949]">Commercial</h4>
+                            <p class="text-[#737373] w-full ">With your support we are providing quality homes to
+                                familys around the world</p>
+                            <button class="btn rounded-3xl text-lg font-bold  text-[#212121]">View Details<i
+                                    class="fa-solid fa-arrow-right rounded-full bg-[#ABEF5F] p-1 -rotate-45 flex items-center justify-center text-[black]"></i></button>
                         </div>
-                     </div>
+                    </div>
                     <div class="border-2 rounded-xl flex justify-center items-center p-10 ">
                         <img class="w-full" src="./assets/img5.png" alt="">
                     </div>
                 </div>
             </div>
-          </section>
+        </section>
 
-          <!-- Discuss next project -->
-        <section style="background-image: url(./assets/bg.jpg);" class="container max-w-[1440px] mx-auto mt-28">
+        <!-- Discuss next project -->
+        <section style="background-image: url(./assets/bg.jpg); background-repeat: no-repeat; background-size: cover;"
+            class="container max-w-[1440px] mx-auto mt-10 lg:mt-10">
             <div class="flex flex-col justify-center items-center">
-                <div class="flex flex-col justify-center items-center w-3/5 space-y-5 mt-10">
-                    <button class=" rounded-3xl p-2 font-bold flex items-center justify-center gap-2 bg-gray-100"><i class="fa-solid fa-arrow-right"></i>Let's Connect</button>
+                <div class="flex flex-col justify-center items-center w-4/5 lg:w-3/5 space-y-5 mt-10">
+                    <button class=" rounded-3xl p-2 font-bold flex items-center justify-center gap-2 bg-gray-100"><i
+                            class="fa-solid fa-arrow-right"></i>Let's Connect</button>
                     <h2 class="text-4xl font-extrabold text-[#212121]">Let’s Discuss Next Project</h2>
-                    <p class="text-lg font-medium text-[#494949] text-center">keep families together, safe, happy because they have a place to call home. Your support directly fucds home contruction through our trusted on the ground partner. </p>
+                    <p class="text-lg font-medium text-[#494949] text-center">Join the neighborhood rinterio and be the first life changing stories of home and impact directly from the field. </p>
                 </div>
-                <div class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 w-3/4 p-10 ">
-                   <input class="p-5 border-none outline-none w-full rounded-full" type=" text" placeholder="First Name*">
-                   <input class="p-5 border-none outline-none w-full rounded-full" type="text" placeholder="Last Name*">
-                   <input class="p-5 border-none outline-none w-full rounded-full" type=" text" placeholder="Phone Number*">
-                   <input class="p-5 border-none outline-none w-full rounded-full" type="text" placeholder="Email Number*">
-                   <textarea class="p-10 border-none outline-none w-full rounded-3xl lg:col-span-2" name="" id="" placeholder="Write your message here"></textarea>
+                <div class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 w-3/4 p-4 lg:p-10 ">
+                    <input class="p-5 border-none outline-none w-full rounded-full" type=" text"
+                        placeholder="First Name*">
+                    <input class="p-5 border-none outline-none w-full rounded-full" type="text"
+                        placeholder="Last Name*">
+                    <input class="p-5 border-none outline-none w-full rounded-full" type=" text"
+                        placeholder="Phone Number*">
+                    <input class="p-5 border-none outline-none w-full rounded-full" type="text"
+                        placeholder="Email Number*">
+                    <textarea class="p-10 border-none outline-none w-full rounded-3xl lg:col-span-2" name="" id=""
+                        placeholder="Write your message here"></textarea>
                 </div>
-               <div class=" w-3/4 p-10">
-                <button class="btn  bg-[#ABEF5F] rounded-3xl text-xl font-extrabold w-full ">Send Mail<i class="fa-solid fa-arrow-right rounded-full bg-black p-1 -rotate-45 flex items-center justify-center text-[#ABEF5F]"></i></button>
-               </div>
+                <div class=" w-3/4 p-10">
+                    <button class="btn  bg-[#ABEF5F] rounded-3xl text-xl font-extrabold w-full ">Send Mail<i
+                            class="fa-solid fa-arrow-right rounded-full bg-black p-1 -rotate-45 flex items-center justify-center text-[#ABEF5F]"></i></button>
+                </div>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <section class="container max-w-[1440px] mx-auto p-4 lg:p-20 bg-[#1C1C1C]">
+            <div class=" flex flex-col justify-center items-center space-y-14 ">
+                <div class="flex flex-col justify-center items-center lg:w-3/5 space-y-5 mt-10">
+                    <a class="btn btn-ghost text-4xl font-extrabold text-[#E9E9E9]">
+                        <i class="fa-solid fa-arrow-right  rounded-full bg-[#ABEF5F] -rotate-45 text-black-300 p-1"></i>
+                        Rinterio
+                    </a>
+                    <p class="text-lg font-medium text-[#737373] text-center">We believe that the home is the foundation of a families future. We believe of providing a home with no strings attached to transform communities.</p>
+                </div>
+                <div class="text-[#E9E9E9] flex flex-col md:flex-row justify-center items-center gap-10 md:20 lg:gap-36">
+                    <p>Home</p>
+                    <p>Services</p>
+                    <p>Portfolio</p>
+                    <p>Blogs</p>
+                    <p>Contact Us</p>
+                </div>
+                <button class="btn bg-[#ABEF5F] rounded-3xl text-lg font-extrabold ">
+                    Book Consult
+                    <i
+                        class="fa-solid fa-arrow-right rounded-full bg-black p-1 -rotate-45 flex items-center justify-center text-[#ABEF5F]"></i>
+                </button>
+            </div>
+        </section>
+    </footer>
 </body>
+
 </html>
